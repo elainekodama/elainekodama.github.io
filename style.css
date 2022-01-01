@@ -1,0 +1,186 @@
+.nav-text {
+    position: static;
+    width: 34px;
+    height: 16px;
+
+    font-family: Futura;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 67%;
+}
+
+a:link, a:visited {
+    font-family: Futura;
+    font-style: normal;
+    font-weight: 500;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+a:link:hover, a:visited:hover {
+    font-family: Futura;
+    font-style: normal;
+    font-weight: 500;
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+header {
+    height: 600px;
+    background: #EC3599;
+    align-items: center;
+    justify-items: center;
+}
+
+.name-card {
+    height: 400;
+    width: 600;
+    margin: 0 auto;
+    background: #FFFFFF;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.16);
+    border-radius: 12px;
+}
+
+h1 {
+    font-family: Futura;
+    font-weight: bold;
+    font-size: 86px;
+    color: #EC3599;
+}
+
+h4 {
+    font-family: Futura;
+    font-weight: 500;
+    font-size: 24px;
+    /* or 67% */
+    color: #EC3599;
+}
+
+.name {
+    position: absolute;
+    width: 462px;
+    height: 154px;
+    left: 632px;
+    top: 241px;
+    line-height: 77px;
+}
+
+.name-title{
+    position: absolute;
+    width: 441px;
+    height: 32px;
+    left: 411px;
+    top: 460px;
+    line-height: 16px;
+}
+
+.desc {
+    line-height: 32px;
+    position: absolute;
+    width: 652px;
+    height: 118px;
+    left: 411px;
+    top: 503px;
+}
+
+.headshot {
+    position: absolute;
+    width: 203px;
+    height: 203px;
+    left: 411px;
+    top: 216px;
+}
+
+.recent-work {
+    position: relative;
+    width: 378px;
+    left: 313px;
+    line-height: 64 px;
+}
+
+h3 {
+    font-family: Futura;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    color: #EC3599;
+}
+
+.proj {
+    position: relative;
+    width: 350px;
+    height: 75%;
+    background: #FFFFFF;
+    margin: 20px auto;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.12);
+    border-radius: 12px;
+}
+
+.proj-name {
+    font-family: Futura;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    color: #EC3599;
+}
+
+.proj-lang {
+    font-family: Futura;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 16px;
+    color: #828282;
+}
+
+.proj-desc {
+    font-family: SF Pro;
+    font-style: normal;
+    font-weight: 510;
+    font-size: 16px;
+    color: #333333;
+}
+
+.proj-items {
+    justify-items: start;
+}
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: #EC3599;
+    color: white;
+  }
+
+.input-text {
+    font-family: SF Pro;
+    font-style: normal;
+}
+
+.input-shadow {
+    box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.14);
+}
+
+h2 {
+    font-family: Futura;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 85px;
+    color: #FFFFFF;
+}
+
+.button-submit {
+    background-color: white;
+    color: #EC3599;
+    font-family: Futura;
+    padding: 5px 10px;
+    border-radius: 12px;
+    border: none;
+    float: left;
+    margin: 5px;
+}
+
+.disabled {
+    opacity: 0.6;
+}

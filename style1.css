@@ -1,0 +1,99 @@
+.header {
+    background-color: rgb(255, 214, 214);
+    margin: 0px;
+    height: 33%;
+    border: 0px;
+}
+
+.reg-padding {
+    padding: 50px;
+}
+
+h1, h3, h4, h5 {
+    text-align: left;
+    font-family: "Helvetica", sans-serif;
+}
+
+a:link, a:visited {
+    font-family: "Helvetica", sans-serif;
+    color: rgb(253, 116, 185);
+}
+
+a:link:hover, a:visited:hover {
+    color: rgb(209, 36, 123);
+}
+
+.bg-color {
+    background-color: rgb(255, 214, 214);
+}
+
+.about-me {
+    font-family: "Helvetica", sans-serif;
+    text-align: center;
+}
+
+/*CV*/
+ul.nav-pills {
+    top: 25%;
+    position: fixed;
+}
+
+/*Portfolio*/
+div.gallery {
+    border-radius: 25px;
+    border: 1px solid #ccc;
+}
+    
+div.gallery:hover {
+    border-radius: 25px;
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    border-radius: 25px;
+    padding: 5px;
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 5px;
+    text-align: center;
+    font-family: "Helvetica", sans-serif;
+}
+
+* {
+box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 10px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 1000px) {
+    .responsive {
+        width: 33.3333%;
+        margin: 8px 0;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
