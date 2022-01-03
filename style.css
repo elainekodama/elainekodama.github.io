@@ -1,3 +1,42 @@
+@font-face {
+    font-family: Futura;
+    src: url(futura/Futura\ Bold\ font.ttf);
+}
+
+@font-face {
+    font-family: SF Pro;
+    src:url(fonts/SF-Pro-Text-Regular.otf);
+}
+
+h1 {
+    font-family: Futura;
+    font-weight: bolder;
+    font-size: 70px;
+    color: #EC3599;
+    font-stretch: normal;
+}
+h2 {
+    font-family: Futura;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 85px;
+    color: #FFFFFF;
+}
+h3 {
+    font-family: Futura;
+    font-weight: bolder;
+    font-size: 48px;
+    color: #FFFFFF;
+}
+h4 {
+    font-family: SF Pro;
+    font-weight: normal;
+    font-size: 24px;
+    color: #828282;
+}
+
+/* Navbar and Links */
+
 .nav-text {
     position: static;
     width: 34px;
@@ -10,7 +49,8 @@
     line-height: 67%;
 }
 
-a:link, a:visited {
+a:link,
+a:visited {
     font-family: Futura;
     font-style: normal;
     font-weight: 500;
@@ -18,45 +58,50 @@ a:link, a:visited {
     text-decoration: none;
 }
 
-a:link:hover, a:visited:hover {
+a:link:hover,
+a:visited:hover {
     font-family: Futura;
     font-style: normal;
     font-weight: 500;
-    color: #FFFFFF;
-    text-decoration: underline;
+    color: #EC3599;
+    text-decoration: none;
 }
+
+/* Header */
 
 header {
-    height: 600px;
-    background: #EC3599;
+    height: 550px;
+    background: #101010;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
 }
-
 .name-card {
-    height: 400;
-    width: 600;
-    margin: 0 auto;
     background: #FFFFFF;
+    height: 400px;
+    width: 800px;
+    margin: 0;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.16);
     border-radius: 12px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
-
-h1 {
-    font-family: Futura;
-    font-weight: bold;
-    font-size: 86px;
-    color: #EC3599;
+#headshot-img {
+    height: 400px;
+    width: 280px;
+    object-fit: cover;
+    border-radius: 12px;
 }
-
-h4 {
-    font-family: Futura;
-    font-weight: 500;
-    font-size: 24px;
-    /* or 67% */
-    color: #EC3599;
+.flex-container {
+    height: 400px;
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
 }
-
 .name {
     position: absolute;
     width: 462px;
@@ -65,7 +110,6 @@ h4 {
     top: 241px;
     line-height: 77px;
 }
-
 .name-title{
     position: absolute;
     width: 441px;
@@ -74,7 +118,6 @@ h4 {
     top: 460px;
     line-height: 16px;
 }
-
 .desc {
     line-height: 32px;
     position: absolute;
@@ -84,39 +127,57 @@ h4 {
     top: 503px;
 }
 
-.headshot {
-    position: absolute;
-    width: 203px;
-    height: 203px;
-    left: 411px;
-    top: 216px;
+@media (max-width: 800px) {
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+        height: 800px;
+        width: 400px;
+    }
+    .name-card {
+        height: 800px;
+        width: 400px;
+        position: relative;
+        margin:0;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    header {
+        height: 900px;
+    }
 }
+.name-card-text {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+/* Portfolio */
 
 .recent-work {
     position: relative;
     width: 378px;
     left: 313px;
-    line-height: 64 px;
+    line-height: 64px;
 }
-
-h3 {
-    font-family: Futura;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 48px;
-    color: #EC3599;
-}
-
 .proj {
     position: relative;
     width: 350px;
     height: 75%;
     background: #FFFFFF;
     margin: 20px auto;
-    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.12);
     border-radius: 12px;
+    padding: none;
+    border: none;
 }
 
+.proj:hover {
+    background: #EC3599;
+    text-decoration: none;
+}
 .proj-name {
     font-family: Futura;
     font-style: normal;
@@ -124,7 +185,6 @@ h3 {
     font-size: 24px;
     color: #EC3599;
 }
-
 .proj-lang {
     font-family: Futura;
     font-style: italic;
@@ -132,7 +192,6 @@ h3 {
     font-size: 16px;
     color: #828282;
 }
-
 .proj-desc {
     font-family: SF Pro;
     font-style: normal;
@@ -141,46 +200,73 @@ h3 {
     color: #333333;
 }
 
-.proj-items {
-    justify-items: start;
+.proj:hover .proj-name {
+    color:#FFFFFF;
 }
+.proj:hover .proj-desc {
+    color:#FFFFFF;
+}
+.proj:hover .proj-lang {
+    color: #FFA5C3;;
+}
+.proj-hover .card-body {
+    text-decoration: none;
+}
+
+/* Footer */
 
 footer {
     text-align: center;
     padding: 3px;
     background-color: #EC3599;
     color: white;
-  }
+    margin-top: 40px;
+}
+
+.connect-text {
+    width: 200px;
+    height: 200px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
 
 .input-text {
     font-family: SF Pro;
     font-style: normal;
 }
-
 .input-shadow {
     box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.14);
 }
-
-h2 {
-    font-family: Futura;
-    font-style: italic;
-    font-weight: 500;
-    font-size: 64px;
-    line-height: 85px;
-    color: #FFFFFF;
-}
-
 .button-submit {
+    background-color: #EC3599;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 12px;
+    padding: 5px 10px;
+    margin: 5px;
+    color: white;
+    font-family: Futura;
+    float: left;
+}
+.button-submit:hover {
     background-color: white;
     color: #EC3599;
-    font-family: Futura;
-    padding: 5px 10px;
-    border-radius: 12px;
-    border: none;
-    float: left;
-    margin: 5px;
+    border: white;
+    padding: 7px 12px;
 }
-
 .disabled {
     opacity: 0.6;
+}
+
+#footerlink a:link,
+#footer-link a:visited {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+#footer-link a:hover,
+#footer-link a:visited:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
 }
