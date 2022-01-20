@@ -2,30 +2,24 @@
 
 <head>
   <title>Elaine Kodama</title>
-  <link href="style.css" rel="stylesheet">
+  <link href="index-style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
   <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <link href="shared-style.css" rel="stylesheet">
+</head>
 
-    </script>
-  </head>
-
-<body style="background-color: #272727">
-  <!-- Navbar-->
-  <nav class="navbar navbar-expand-sm bg-color" style="background-color: #101010;">
+<body style="background-color: #272727;">
+  <nav class="flexbox">
     <!-- Home link -->
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="index.html">
-          <img src="media/logo.png" alt="EK logo">
-        </a> 
-      </div>
-    </div>
+      <a class="navbar-brand" href="index.html" style="margin-left: 20px;">
+        <img src="media/logo.png" alt="EK logo">
+      </a> 
     <!-- Other links-->
-    <div class="justify-content-end collapse navbar-collapse">
-      <ul class="navbar-nav">
+      <ul>
         <li class="nav-item">
           <a class="nav-link" href="cv.html">CV</a>
         </li>
@@ -36,20 +30,19 @@
           <a class="nav-link" href="media/Resume.pdf">Resume</a>
         </li>
       </ul>
-    </div>
-  </nav>
+    </nav>
 
   <!-- Header -->
-  <header>
+  <div class="jumbotron">
       <div class="name-card flex-container">
         <div><img src="media/headshot.jpg" alt="headshot" id="headshot-img"></div>
         <div class="name-card-text flex-container">
           <div><h1>Elaine<p>Kodama</p></h1></div>
-          <div><h4 style="font-style: italic; font-weight: lighter;">Front-end Developer</h4></div>
-          <div><h4>Some more description about me! Some more description about me!</h4></div>
+          <div><h4 style="font-style: italic; font-weight: lighter;">Software Developer</h4></div>
+          <div><h4><!-- Need description --></h4></div>
         </div>
       </div>
-  </header>
+    </div>
 
   <!-- Projects -->
   <div class="container" style="margin-top: 40px;">
@@ -63,11 +56,11 @@
       <div class="col-xl-4 col-lg-5 col-md-6">
         <a class="proj-link" href="https://github.com/elainekodama/play-aquarium.git">
           <div class="card proj" style="border: none;">
-            <img class="card-img-top img-responsive" src="media/winnie.jpeg" alt="Aquarium">
+            <img class="card-img-top img-responsive" src="media/aquarium.png" alt="Aquarium" style="height: 250px;">
             <div class="card-body">
               <h4 class="card-title proj-name">Aquarium</h4>
               <p class="card-text proj-lang">JavaFX</p>
-              <p class="card-text proj-desc" id="proj-desc">A virtual aquarium where users can buy, sell, and collect coins to grow your aquatic environment</p>
+              <p class="card-text proj-desc" id="proj-desc">A virtual aquarium game where users can buy, sell, and collect coins to grow your aquatic environment</p>
             </div>
           </div>
         </a>
@@ -75,7 +68,7 @@
       <div class="col-xl-4 col-lg-5 col-md-6">
         <a class="proj-link" href="https://github.com/elainekodama/scrabble.git">
           <div class="card proj" style="border: none;">
-            <img class="card-img-top img-responsive" src="media/winnie.jpeg" alt="Aquarium">
+            <img class="card-img-top img-responsive" src="media/scrabble2.jpg" alt="Scrabble" style="height: 250px;">
             <div class="card-body">
               <h4 class="card-title proj-name">Scrabble</h4>
               <p class="card-text proj-lang">JavaFX</p>
@@ -91,11 +84,11 @@
       <div class="col-xl-4 col-lg-5 col-md-6">
         <a class="proj-link" href="https://github.com/elainekodama/flashcards.git">
           <div class="card proj" style="border: none;">
-            <img class="card-img-top img-responsive" src="media/winnie.jpeg" alt="Aquarium">
+            <img class="card-img-top img-responsive" src="media/winnie.jpeg" alt="Aquarium" style="height: 250px;">
             <div class="card-body">
               <h4 class="card-title proj-name">Mobile Flashcards</h4>
-              <p class="card-text proj-lang">Swift, iOS iPad app, Firebase API</p>
-              <p class="card-text proj-desc">A tool for users to create their own flashcards using the iPad pencil and study them on-the-go</p>
+              <p class="card-text proj-lang">Swift, iOS, Firebase</p>
+              <p class="card-text proj-desc">An app for users to create their own flashcards using the iPad pencil and study them on-the-go</p>
             </div>
           </div>
           </a>
@@ -103,7 +96,7 @@
       <div class="col-xl-4 col-lg-5 col-md-6">
         <a class="proj-link" href="https://github.com/elainekodama/evite.git">
           <div class="card proj" style="border: none;">
-            <img class="card-img-top img-responsive" src="media/winnie.jpeg" alt="Aquarium">
+            <img class="card-img-top img-responsive" src="media/evite.png" alt="Aquarium" style="height: 250px;">
             <div class="card-body">
               <h4 class="card-title proj-name">Evite System</h4>
               <p class="card-text proj-lang">Java</p>
@@ -111,34 +104,6 @@
             </div>
           </div>
         </a>
-      </div>
-    </div>
-
-    <!-- Projects 5 & 6 -->
-    <div class="row align-items-center justify-content-center">
-      <div class="col-xl-4 col-lg-5 col-md-6">
-        <a class="proj-link" href="aquarium.html">
-          <div class="card proj" style="border: none;">
-            <img class="card-img-top img-responsive" src="media/winnie.jpeg" alt="Aquarium">
-            <div class="card-body">
-              <h4 class="card-title proj-name">Aquarium</h4>
-              <p class="card-text proj-lang">Java</p>
-              <p class="card-text proj-desc">An aquarium game</p>
-            </div>
-          </div>
-          </a>
-      </div>
-      <div class="col-xl-4 col-lg-5 col-md-6">
-        <a class="proj-link" href="aquarium.html">
-          <div class="card proj" style="border: none;">
-            <img class="card-img-top img-responsive" src="media/winnie.jpeg" alt="Aquarium">
-            <div class="card-body">
-              <h4 class="card-title proj-name">Aquarium</h4>
-              <p class="card-text proj-lang">Java</p>
-              <p class="card-text proj-desc">An aquarium game</p>
-            </div>
-          </div>
-          </a>
       </div>
     </div>
   </div>
@@ -153,16 +118,16 @@
         <div class="flex-container connect-text">
           <div><h2>Let's Connect!</h2></div>
           <div>
-            <a href="cv.html">CV</a>
+            <a href="cv/cv.html">CV</a>
             <a href="blog.html" style="margin-left: 5px;">Blog</a>
             <a href="media/Resume.pdf" style="margin-left: 5px;">Resume</a>
           </div>
           <div>
             <a class="link" href="https://github.com/elainekodama" style="text-decoration: none;">
-              <img src="media/github.png" alt="GitHub Cat" style="padding: 5px;">
+              <i class="bi-github" role="img" aria-label="GitHub" style="font-size: 2em; padding: 5px;"></i>
             </a>
             <a class="link" href="https://www.linkedin.com/in/elaine-kodama/" style="text-decoration: none;">
-              <img src="media/linkedin.png" alt="LinkedIn Logo" style="padding: 5px;">
+              <i class="bi bi-linkedin" style="font-size: 2em; padding: 5px;"></i>
             </a>
           </div>
         </div>
@@ -170,7 +135,7 @@
 
       <!-- Leave a message -->
       <div class="col-l-9 col-md-7" style="margin-top: 2%; margin-bottom: 2%;">
-        <div class="row justify-content-center align-items-center">
+        <div class="row justify-content-center align-items-center flex">
           <div class="col">
             <div class="form-group" style="padding: 5px;">
               <input type="name" class="form-control input-text input-shadow" id="nameInput" placeholder="Name">
@@ -184,9 +149,11 @@
         </div>
         <form>
           <div class="form-group" style="padding: 5px;">
-            <textarea type="message" class="form-control input-text input-shadow" id="messageInput" placeholder="Message" rows="3"></textarea>
+            <textarea type="message" class="form-control input-text input-shadow" id="messageInput" placeholder="NOT IMPLEMENTED YET" rows="3"></textarea>
           </div>
           <button type="submit" class="button-submit">Submit</button>
         </form>
       </div>
+    </div>
+  </div>
 </footer>

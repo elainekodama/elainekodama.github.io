@@ -1,0 +1,125 @@
+@font-face {
+    font-family: Futura;
+    src: url(futura/futur.ttf);
+}
+
+@font-face {
+    font-family: SF Pro;
+    src:url(fonts/SF-Pro-Text-Regular.otf);
+}
+
+@font-face {
+    font-family: Futura Bold;
+    src: url(futura/Futura\ Bold\ font.ttf);
+}
+
+h1 {
+    margin: auto;
+    font-family: Futura;
+    text-decoration: underline;
+}
+
+h3 {
+    font-family: Futura;
+    color: #EC3599;
+}
+
+/* Navbar and Links */
+nav.flexbox {
+    background-color: #101010;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+a:link,
+a:visited {
+    font-family: Futura;
+    font-style: normal;
+    font-weight: 500;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+a:link:hover,
+a:visited:hover {
+    font-family: Futura;
+    font-style: normal;
+    font-weight: 500;
+    color: #EC3599;
+    text-decoration: none;
+}
+
+/* Sidebar */
+body {
+    margin: 0;
+    font-family: SF Pro;
+    background: #272727;
+}
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #101010;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.sidebar a {
+    display: block;
+    color: #FFFFFF;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    background-color: #555;
+    color: #FFFFFF;
+}
+
+div.content {
+    margin-left: 200px;
+    padding: 5px 16px;
+    height: 1000px;
+    color: #FFFFFF;
+    background: #272727;
+}
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .sidebar a { float: left; }
+    div.content { margin-left: 0; position: relative; }
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+    padding-top: 60px;
+  }

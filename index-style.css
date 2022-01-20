@@ -1,6 +1,6 @@
 @font-face {
     font-family: Futura;
-    src: url(futura/Futura\ Bold\ font.ttf);
+    src: url(futura/futur.ttf);
 }
 
 @font-face {
@@ -8,12 +8,15 @@
     src:url(fonts/SF-Pro-Text-Regular.otf);
 }
 
+@font-face {
+    font-family: Futura Bold;
+    src: url(futura/Futura\ Bold\ font.ttf);
+}
+
 h1 {
-    font-family: Futura;
-    font-weight: bolder;
-    font-size: 70px;
+    font-family: Futura Bold;
+    font-size: 150%;
     color: #EC3599;
-    font-stretch: normal;
 }
 h2 {
     font-family: Futura;
@@ -21,10 +24,10 @@ h2 {
     font-size: 64px;
     line-height: 85px;
     color: #FFFFFF;
+    font-style: italic;
 }
 h3 {
     font-family: Futura;
-    font-weight: bolder;
     font-size: 48px;
     color: #FFFFFF;
 }
@@ -34,19 +37,22 @@ h4 {
     font-size: 24px;
     color: #828282;
 }
-
 /* Navbar and Links */
+nav.flexbox {
+    background-color: #101010;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none
+}
 
-.nav-text {
-    position: static;
-    width: 34px;
-    height: 16px;
-
-    font-family: Futura;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 67%;
+nav li {
+    margin-right: 20px;
 }
 
 a:link,
@@ -69,7 +75,8 @@ a:visited:hover {
 
 /* Header */
 
-header {
+.jumbotron {
+    height: auto;
     height: 550px;
     background: #101010;
     align-items: center;
@@ -172,6 +179,7 @@ header {
     border-radius: 12px;
     padding: none;
     border: none;
+    transition: background 0.3s;
 }
 
 .proj:hover {
@@ -184,6 +192,7 @@ header {
     font-weight: bold;
     font-size: 24px;
     color: #EC3599;
+    transition: color 0.3s;
 }
 .proj-lang {
     font-family: Futura;
@@ -191,6 +200,7 @@ header {
     font-weight: 500;
     font-size: 16px;
     color: #828282;
+    transition: color 0.3s;
 }
 .proj-desc {
     font-family: SF Pro;
@@ -198,6 +208,7 @@ header {
     font-weight: 510;
     font-size: 16px;
     color: #333333;
+    transition: color 0.3s;
 }
 
 .proj:hover .proj-name {
@@ -212,6 +223,9 @@ header {
 .proj-hover .card-body {
     text-decoration: none;
 }
+#proj-pic {
+    height: 250px;
+}
 
 /* Footer */
 
@@ -224,7 +238,7 @@ footer {
 }
 
 .connect-text {
-    width: 200px;
+    width: 230px;
     height: 200px;
     flex-direction: column;
     justify-content: center;
@@ -269,4 +283,10 @@ footer {
 #footer-link a:visited:hover {
     color: #FFFFFF;
     text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+    .connect-text {
+        align-items: center;
+    }
 }
