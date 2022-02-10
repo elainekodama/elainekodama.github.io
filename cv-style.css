@@ -13,10 +13,49 @@
     src: url(futura/Futura\ Bold\ font.ttf);
 }
 
+@font-face {
+    font-family: SF Pro bold;
+    src: url(fonts/SF-Pro-Display-Bold.otf);
+    font-weight: bold;
+}
+
 h1 {
     margin: auto;
     font-family: Futura;
-    text-decoration: underline;
+    text-decoration: none;
+    font-size: 32px;
+    padding-bottom: 20px;
+    padding-top: 40px;
+}
+.title {
+    padding-top: 10px;
+    font: SF Pro;
+    font-weight: 700;
+    color: #EC3599;
+    font-size: 24px;
+    text-overflow: ellipsis; 
+    overflow: hidden; 
+}
+
+.title2 {
+    font: SF Pro;
+    color: #EC3599;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.subtitle {
+    font-family: SF Pro;
+    color: #BDBDBD;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.desc {
+    font-family: SF Pro;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: normal;
 }
 
 h3 {
@@ -25,21 +64,13 @@ h3 {
 }
 
 /* Navbar and Links */
-nav.flexbox {
+.navbar {
     background-color: #101010;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-nav ul {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    list-style-type: none
 }
 
-nav li {
-    margin-right: 20px;
+#myNavbar7 {
+    justify-content: end;
+    margin-right: 15px;
 }
 
 a:link,
@@ -67,59 +98,158 @@ body {
     background: #272727;
 }
 
-.sidebar {
+.menu {
+    font-family: SF Pro;
+    padding-top: 40px;
+    color: white;
+    float: left;
     margin: 0;
-    padding: 0;
-    width: 200px;
-    background-color: #101010;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
+    width:100%;
 }
 
-.sidebar a {
-    display: block;
+.menu-item {
+    display: flex;
+    position: sticky;
     color: #FFFFFF;
-    padding: 16px;
+    font-size: 100%;
+    vertical-align:center;
+    padding: 3%;
+    padding-left: 15%;
     text-decoration: none;
+    margin-bottom: 5%;
 }
 
-.sidebar a:hover {
+.menu-item:hover,
+.menu-item:visited:hover {
     background-color: #555;
     color: #FFFFFF;
 }
 
-div.content {
-    margin-left: 200px;
-    padding: 5px 16px;
-    height: 1000px;
+.menu-icon {
+    font-size: 1em;
+    padding: 5px;
+    text-decoration: none;
+    position: sticky;
+}
+
+.menu-icon:hover,
+.menu-icon:visited:hover {
     color: #FFFFFF;
+}
+
+.content {
+    float: left;
+    font-family: SF Pro;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: normal;
     background: #272727;
 }
 
-@media screen and (max-width: 700px) {
-    .sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
-    }
-    .sidebar a { float: left; }
-    div.content { margin-left: 0; position: relative; }
-}
+@media screen and (max-width: 800px) {
 
-@media screen and (max-width: 400px) {
-    .sidebar a {
+    h1 {
+        font-size: 24px;
+    }
+    .title {
+        font-size: 18px;
+    }
+    
+    .title2 {
+        font-size: 16px;
+    }
+    
+    .subtitle {
+        font-size: 16px;
+    }
+    
+    .desc {
+        font-size: 12px;
+    }
+
+    .menu {
+        display: none;
+    }
+    .panel {
+        width: 25%;
+        margin: auto;
+        margin-top: 15px;
+        background-color: #101010;
         text-align: center;
-        float: none;
+        align-content: center;
+        border-radius: 12px;
+        padding: 5px 10px;
+    }
+
+    div.content { margin-left: 0; margin-right: 0; position: relative;}
+}
+
+@media screen and (min-width: 800px){
+    .panel {
+        display: none;
     }
 }
 
-.sticky {
-    position: fixed;
-    top: 0;
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: #EC3599;
+    color: white;
+    margin-top: 0;
 }
 
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-    padding-top: 60px;
-  }
+.connect-text {
+    width: 230px;
+    height: 200px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.input-text {
+    font-family: SF Pro;
+    font-style: normal;
+}
+.input-shadow {
+    box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.14);
+}
+.button-submit {
+    background-color: #EC3599;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 12px;
+    padding: 5px 10px;
+    margin: 5px;
+    color: white;
+    font-family: Futura;
+    float: left;
+}
+.button-submit:hover {
+    background-color: white;
+    color: #EC3599;
+    border: white;
+    padding: 7px 12px;
+}
+.disabled {
+    opacity: 0.6;
+}
+
+#footerlink a:link,
+#footer-link a:visited {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+#footer-link a:hover,
+#footer-link a:visited:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+    .connect-text {
+        align-items: center;
+    }
+}

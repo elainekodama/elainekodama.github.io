@@ -8,118 +8,265 @@
     <!-- navbar -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-    <link href="shared-style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 </head>
 
-<body style="position: relative; background: #272727;" data-spy="scroll" data-target="#myScrollspy" data-offset="20">
-  <nav class="flexbox">
-  <!-- Home link -->
+<body style="background: #272727;">
+  <nav class="navbar navbar-expand-lg">
     <a class="navbar-brand" href="index.html" style="margin-left: 20px;">
       <img src="media/logo.png" alt="EK logo">
-    </a> 
-  <!-- Other links-->
-    <ul>
-      <li class="nav-item">
-        <a class="nav-link" href="cv.html">CV</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="blog.html">Blog</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="media/Resume.pdf">Resume</a>
-      </li>
-    </ul>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="bi bi-list" style="font-size: 2em; color: white;"></i>
+    </button>
+  
+    <div class="collapse navbar-collapse justify-content-end" id="navbarToggle">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0" style="margin-right: 15px;">
+        <li class="nav-item">
+          <a class="nav-link" href="cv.html">CV</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="blog.html">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="media/Resume.pdf">Resume</a>
+        </li>
+      </ul>
+    </div>
   </nav>
 
-    <div class="sidebar" id="sb">
-      <a class="bc active" href="#about">About</a>
-      <a class="bc" href="#experience">Experience</a>
-      <a href="#skills">Skills</a>
-      <a class="bc" href="#education">Education</a>
-      <a href="#courses">Relevant Courses</a>
-      <a href="#volunteer">Volunteer</a>
-      <a href="#activities">Activities</a>
-    <div style="position: relative;">
-      <a class="link" href="https://github.com/elainekodama" style="text-decoration: none;">
-        <i class="bi-github" role="img" aria-label="GitHub" style="font-size: 1em; padding: 5px;"></i>
-      </a>
-      <a class="link" href="https://www.linkedin.com/in/elaine-kodama/" style="text-decoration: none;">
-        <i class="bi bi-linkedin" style="font-size: 1em; padding: 5px;"></i>
-      </a>
+  <div class="panel-group">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a class="panel-name" data-toggle="collapse" href="#collapse1">Jump to...</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse">
+        <div class="panel-body"><a class="active" href="#about">About</a></div>
+        <div class="panel-body"><a class="" href="#experience">Experience</a></div>
+        <div class="panel-body"><a class="" href="#skills">Skills</a></div>
+        <div class="panel-body"><a class="" href="#education">Education</a></div>
+        <div class="panel-body"><a class="" href="#courses">Relevant Courses</a></div>
+        <div class="panel-body"><a class="" href="#volunteer">Volunteer</a></div>
+        <div class="panel-body"><a class="" href="#activities">Activities</a></div>
+      </div>
     </div>
   </div>
-    
-    <div class="content">
+
+  <div class="row" data-spy="scroll" data-target="menu" data-offset="20" style="margin-right:0;">
+    <!-- sidebar menu  style="position: relative; box-sizing: border-box;"-->
+    <div class="col-md-3 col-12 lol" style="background-color: #101010;">
+      <div class="menu sticky-top">
+        <a class="menu-item active" href="#about">About</a>
+        <a class="menu-item" href="#experience">Experience</a>
+        <a class="menu-item" href="#skills">Skills</a>
+        <a class="menu-item" href="#education">Education</a>
+        <a class="menu-item" href="#courses">Relevant Courses</a>
+        <a class="menu-item" href="#volunteer">Volunteer</a>
+        <a class="menu-item" href="#activities">Activities</a>
+        <a class="menu-icon" href="https://github.com/elainekodama" style="padding-left: 15%">
+          <i class="bi-github" role="img" aria-label="GitHub"></i>
+        </a>
+        <a class="menu-icon" href="https://www.linkedin.com/in/elaine-kodama/">
+          <i class="bi bi-linkedin"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="col-md-9 col-12 content" style="padding-left: 10%; padding-right: 10%;">
+      <!-- about -->
       <h1 id="about">About</h1>
-      <p>Hello, I am a software developer that is very motivated and passionate about my work.
-         I am looking for back-end or full-stack experience as I take pride in writing clean and organized code, I love to solve puzzles, and I am very detail-oriented.</p>
-      <p>At the University of Southern California, I am pursuing a computer programming minor, in which I have a 4.0 in, and I have spent my free time self-teaching myself and working on projects, like this website.
-         I started coding less than 2 years ago, but I hope that my work and efforts prove my desire and receptiveness to learn.</p>
+      <p class="desc">Hello, I am a software developer that is very motivated and passionate about my work.
+        I am looking for back-end or full-stack experience as I take pride in writing clean and organized code, I love to solve puzzles, and I am very detail-oriented.</p>
+      <p class="desc">At the University of Southern California, I am pursuing a computer programming minor, in which I have a 4.0 in, and I have spent my free time self-teaching and working on projects, like this website.
+        I started coding less than 2 years ago, but I hope that my work and efforts prove my desire and receptiveness to learn.</p>
+    
+        <!-- experience -->
       <h1 id="experience">Experience</h1>
-      <h3>Viterbi School of Engineering— USC</h3>
-      <p>Teaching Assistant/Grader (ITP-368)</p>
-      <p>Los Angeles, CA</p>
-      <p>Spring 2022</p>
-      <ul>
-        <li>Supports Professor Barret Koster in a graphical user interface class</li>
-        <li>Assists students in utilizing the JavaFX library, applying principles of object-oriented
-        programming, and understanding fundamental design aspects such as accessibility, localization, and best-practice software design</li>
+      <div class="title">Teaching Assistant/Grader (ITP-368)<span class="title2"> Viterbi School of Engineering— USC</div>
+      <h3 class="subtitle">Los Angeles, CA/Spring 2022</h3>
+      <ul class="desc">
+        <li>Supports  Professor  Barret  Koster  in  a  graphical  user  interface  class</li>
+        <li>Assists students in utilizing the JavaFX library, applying principles of object-oriented programming, and understanding fundamental design aspects such as accessibility, localization, and best-practice software design</li>
         <li>Provides help on assignments and learning concepts in class two hours a week, and in office hours four hours a week</li>
         <li>Grades half of the weekly assignments and labs for a class of ~30 students</li>
       </ul>
-      <h3>Viterbi School of Engineering— USC</h3>
-      <p>Teaching Assistant/Grader (ITP-265)</p>
-      <p>Los Angeles, CA</p>
-      <p>Fall 2021, Spring 2022</p>
-      <ul>
+      <h2 class="title">Teaching Assistant/Grader (ITP-265)<span class="title2"> Viterbi School of Engineering— USC</h2>
+      <h3 class="subtitle">Los Angeles, CA/Fall 2021, Spring 2022</h3>
+      <ul class="desc">
         <li>Reinforces key concepts of inheritance, polymorphism, abstract classes and interfaces to help students understand object-oriented design</li>
         <li>Aids students in office hours two hours a week and during class four hours a week for two class sections of ~40 students</li>
         <li>Collaborates every week with professor and other teaching assistants to prepare lecture material, homework assignments, and exams</li>
       </ul>
-      <h3>Coding Earth</h3>
-      <p>Tutor</p>
-      <p>Los Angeles, CA</p>
-      <p>August 2020 – Present</p>
-      <ul>
+      <h2 class="title">Tutor<span class="title2"> Coding Earth</h2>
+      <h3 class="subtitle">Los Angeles, CA/August 2020 – Present</h3>
+      <ul class="desc">
         <li>Teaches students from intermediate school to high school basic coding to prepare them for college</li>
         <li>Prepares lesson plans for 1-hour sessions and assigns homework for ~10 students in Python and Java</li>
         <li>Provides support for current college students in Python, Java, Swift, or C++ over Zoom</li>
       </ul>
-      <h3>Center for Neural Engineering—USC</h3>
-      <p>Research Assistant</p>
-      <p>Los Angeles, CA</p>
-      <p>January – November 2021</p>
-      <ul>
+      <h2 class="title">Research Assistant<span class="title2"> Center for Neural Engineering—USC</h2>
+      <h3 class="subtitle">Los Angeles, CA/January – November 2021</h3>
+      <ul class="desc">
         <li>Collaborated with a team to identify key mechanisms involving mitochondria in the development of neurodegenerative diseases</li>
         <li>Developed brain cell models to isolate each energy-consuming mechanisms in NEURON for 8 hours a week</li>
         <li>Received $3000 funding from Summer Undergraduate Research Fund to facilitate one-on-one mentoring with faculty</li>
       </ul>
-      <h3>Digestive Disease Consultants</h3>
-      <p>Medical Scribe for Dr. Kevin Kodama</p>
-      <p>Fresno, CA</p>
-      <p>May – August 2018, 2019</p>
-      <ul>
-        <li>Documented ~23 gastroenterology patient (in-office) encounters a day into EPIC medical records, including patients’ chief complaints;
-        physician’s assessment and plan; and medication, procedure, lab, and/or referral orders (SOAP)</li>
+      <h2 class="title">Medical Scribe<span class="title2"> Digestive Disease Consultants (Dr. Kevin Kodama)</h2>
+      <h3 class="subtitle">Fresno, CA/May – August 2018, 2019</h3>
+      <ul class="desc">
+        <li>Documented ~23 gastroenterology patient (in-office) encounters a day into EPIC medical records, including patients’ chief complaints; physician’s assessment and plan; and medication, procedure, lab, and/or referral orders (SOAP)</li>
         <li>Developed clinical experience by learning medical terminology and proper medical record documentation</li>
       </ul>
-    
+      <h2 class="title">Student Ambassador<span class="title2"> Vanderbilt Call Center</h2>
+      <h3 class="subtitle">Nashville, TN/August - December 2018</h3>
+      <ul class="desc">
+        <li>Networked with over 100 Vanderbilt alumni in 8 hours a week to keep them connected to the university</li>
+        <li>Contributed to raising around $500,000 for university programs, scholarships, and building funds</li>
+      </ul>
+      <!-- skills -->
       <h1 id="skills">Skills</h1>
-        <h3>Java</h3>
-        <h3>Python</h3>
-        <h3>Swift</h3>
+      <div class="title">Java, Python, C++</div>
+      <div class="subtitle">Proficient- 3 years</div>
+      <div class="title">Swift</div>
+      <div class="subtitle">Intermediate- 2 years</div>
+      <div class="title">HTML/CSS</div>
+      <div class="subtitle">Intermediate- 1 year</div>
+      <p></p>
+      <!-- education -->
       <h1 id="education">Education</h1>
-        <h3>University of Southern California</h3>
-        <p>Environmental Science and Health, B.S.</p>
-        <p>Computer Programming Minor</p>
-        <p>2019-2022</p>
-        <p>Awards and Honors:</p>
+      <div class="title">University of Southern California</div>
+      <div class="subtitle">2019-2022</div>
+      <ul style="list-style-type: none; padding: 0;">
+        <li>Environmental Science and Health, B.S.</li>
+        <li>Computer Programming Minor</li>
+        <li>GPA: 3.75/4.00</li>
+        <li>Awards and Honors: Dean's List (7 semesters), SURF recipient, Renaissance Scholar</li>
+      </ul>
+      <div class="title">Vanderbilt University</div>
+      <div class="subtitle">2018-2019</div>
+      <ul style="list-style-type: none; padding: 0;">
+        <li>GPA: 3.63/4.00</li>
+        <li>Awards and Honors: Dean's List (2 semesters), Alpha Lambda Delta Honor Society</li>
+      </ul>
+      <div class="title">Clovis West High School</div>
+      <div class="subtitle">2014-2018</div>
+      <ul style="list-style-type: none; padding: 0;">
+        <li>GPA: 4.00/4.00</li>
+        <li>Awards and Honors: National Honor Society, California Scholarship Federation, AP Scholar with Distinction</li>
+      </ul>
+      <p></p>
+      <!-- relevant courses -->
       <h1 id="courses">Relevant Courses</h1>
-        <h3>ITP-115</h3>
-        <p>Introduction to Python</p>
+      <div class="title">Introduction to Python</div>
+      <div class="subtitle">USC ITP-115</div>
+      <p></p>
+      <div class="title">Object-Oriented Programming (Java)</div>
+      <div class="subtitle">USC ITP-265</div>
+      <p></p>
+      <div class="title">Managing Data in C++</div>
+      <div class="subtitle">USC ITP-365</div>
+      <p></p>
+      <div class="title">iOS App Development</div>
+      <div class="subtitle">USC ITP-342</div>
+      <p></p>
+      <div class="title">Programming Graphical User Interfaces (JavaFX)</div>
+      <div class="subtitle">USC ITP-368</div>
+      <p></p>
+      <div class="title">Introduction to Computer Science</div>
+      <div class="subtitle">Harvardx CS50x 2021</div>
+      <p></p>
+      <div class="title">Complete Java Certification Course</div>
+      <div class="subtitle">Udemy</div>
+      <p></p>
+      <div class="title">Python Mega Course 2021</div>
+      <div class="subtitle">Udemy</div>
+      <p></p>
+      <div class="title">Learn and Understand NodeJS</div>
+      <div class="subtitle">Udemy</div>
+      <p></p>
+      <!-- volunteer work -->
       <h1 id="volunteer">Volunteering</h1>
+      <div class="title">Volunteer<span class="title2"> Orthopaedic Institute for Children</div>
+      <h3 class="subtitle">Los Angeles, CA/October 2019 – Present</h3>
+      <ul class="desc">
+        <li>Interact with patients in the waiting room to provide a welcoming environment for the children and help raise money in fundraisers for the clinic</li>
+        <li>Assist in physical therapy clinic by preparing paperwork, cleaning beds and machines, and answering phone calls</li>
+      </ul>
+      <div class="title">Mentor/Committee Member<span class="title2"> Educate2Elevate</div>
+      <h3 class="subtitle">Los Angeles, CA/August 2021 – Present</h3>
+      <ul class="desc">
+        <li>Meet one-on-one weekly as a mentor for high school students to provide guidance as they apply for colleges, scholarships, and make the transition to college</li>
+        <li>Serve as the USC liaison to help connect the students to current students, alumni, and other beneficial programs and opportunities</li>
+        <li>Helped launch the pilot program to recruit mentors and mentees, create weekly agendas, develop rules for proper conduct and expectations, and assist in any other concerns</li>
+      </ul>
+      <div class="title">Mentor<span class="title2"> Life Project Club</div>
+      <h3 class="subtitle">Nashville, TN/January – April 2019</h3>
+      <ul class="desc">
+        <li>Promoted college awareness and female empowerment by mentoring inner-city high school girls</li>
+        <li>Attended meetings every other week to engage with mentee one-on-one in confidence-building and other activities</li>
+      </ul>
+      <div class="title">Peer Buddy<span class="title2"> Best Buddies Club</div>
+      <h3 class="subtitle">Nashville, TN/August 2018 – April 2019</h3>
+      <ul class="desc">
+        <li>Paired with a buddy with intellectual and developmental disabilities to increase their social exposure and raise awareness in the greater Nashville area</li>
+        <li>Communicate in-person bi-monthly and keep in contact via text, call, or email four times a month</li>
+      </ul>
+      <p></p>
+      <!-- other activities-->
       <h1 id="activities">Activities</h1>
+    
     </div>
+  </div>
 
+</body>
 
-  </body>
+<footer>
+  <!-- Links -->
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col-l-3 col-md-5 d-flex justify-content-center" id="footer-link">
+        <div class="flex-container connect-text">
+          <div><h2 style="text-align: start;">Let's Connect!</h2></div>
+          <div style="text-align: start;">
+            <a href="cv/cv.html">CV</a>
+            <a href="blog.html" style="margin-left: 5px;">Blog</a>
+            <a href="media/Resume.pdf" style="margin-left: 5px;">Resume</a>
+          </div>
+          <div style="text-align: start;">
+            <a class="link" href="https://github.com/elainekodama" style="text-decoration: none;">
+              <i class="bi-github" role="img" aria-label="GitHub" style="font-size: 2em; padding: 5px;"></i>
+            </a>
+            <a class="link" href="https://www.linkedin.com/in/elaine-kodama/" style="text-decoration: none;">
+              <i class="bi bi-linkedin" style="font-size: 2em; padding: 5px;"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Leave a message -->
+      <div class="col-l-9 col-md-7" style="margin-top: 2%; margin-bottom: 2%;">
+        <div class="row justify-content-center align-items-center flex">
+          <div class="col">
+            <div class="form-group" style="padding: 5px;">
+              <input type="name" class="form-control input-text input-shadow" id="nameInput" placeholder="Name">
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group" style="padding: 5px;">
+              <input type="email" class="form-control input-text input-shadow" id="emailInput" placeholder="Email">
+            </div>
+          </div>
+        </div>
+        <form>
+          <div class="form-group" style="padding: 5px;">
+            <textarea type="message" class="form-control input-text input-shadow" id="messageInput" placeholder="NOT IMPLEMENTED YET" rows="3"></textarea>
+          </div>
+          <button type="submit" class="button-submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</footer>
