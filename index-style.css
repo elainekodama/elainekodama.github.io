@@ -1,3 +1,42 @@
+/* Navbar and Links */
+.navbar {
+    background-color: #101010;
+}
+
+a:link,
+a:visited {
+    font-family: Futura,Trebuchet MS,Arial,sans-serif;
+    font-style: normal;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+a:link:hover,
+a:visited:hover {
+    font-family: Futura,Trebuchet MS,Arial,sans-serif;
+    font-style: normal;
+    color: #EC3599;
+    text-decoration: none;
+}
+
+/* Header */
+
+.jumbotron {
+    height: auto;
+    height: 730px;
+    background: #101010;
+    align-items: center;
+    justify-content: center;
+}
+#headshot-img {
+    object-fit: cover;    
+    width: 337px;
+    height: 480px;
+    left: 309px;
+    top: 145px;
+    border-radius: 12px 0px 0px 12px;
+}
+
 #name {
     margin: auto;
     font-family: Futura,Trebuchet MS,Arial,sans-serif;
@@ -40,50 +79,6 @@
     line-height: 64px;
     color:#FFFFFF;
     margin: 84px auto;
-}
-
-/* Navbar and Links */
-.navbar {
-    background-color: #101010;
-}
-
-#myNavbar7 {
-    justify-content: end;
-    margin-right: 15px;
-}
-
-a:link,
-a:visited {
-    font-family: Futura,Trebuchet MS,Arial,sans-serif;
-    font-style: normal;
-    color: #FFFFFF;
-    text-decoration: none;
-}
-
-a:link:hover,
-a:visited:hover {
-    font-family: Futura,Trebuchet MS,Arial,sans-serif;
-    font-style: normal;
-    color: #EC3599;
-    text-decoration: none;
-}
-
-/* Header */
-
-.jumbotron {
-    height: auto;
-    height: 730px;
-    background: #101010;
-    align-items: center;
-    justify-content: center;
-}
-#headshot-img {
-    object-fit: cover;    
-    width: 337px;
-    height: 480px;
-    left: 309px;
-    top: 145px;
-    border-radius: 12px 0px 0px 12px;
 }
 
 .flex-container {
@@ -158,21 +153,11 @@ a:visited:hover {
     #description {
         font-size: 16px;
         text-align: center;
-
     }
 }
 
 /* Portfolio */
 
-.recent-work {
-    position: relative;
-    width: 378px;
-    left: 313px;
-    line-height: 64px;
-    text-align: start;
-    margin: 0;
-    padding: 0;
-}
 .proj {
     position: relative;
     width: 424px;
@@ -184,11 +169,6 @@ a:visited:hover {
     padding: none;
     border: none;
     transition: background 0.3s;
-}
-
-.proj:hover {
-    background: #EC3599;
-    text-decoration: none;
 }
 .proj-name {
     font-family: Futura,Trebuchet MS,Arial,sans-serif;
@@ -217,7 +197,10 @@ a:visited:hover {
     color: #333333;
     transition: color 0.3s;
 }
-
+.proj:hover {
+    background: #EC3599;
+    text-decoration: none;
+}
 .proj:hover .proj-name {
     color:#FFFFFF;
 }
@@ -242,15 +225,6 @@ a:visited:hover {
 
 /* Footer */
 
-footer {
-    text-align: center;
-    padding: 3px;
-    background-color: #EC3599;
-    color: white;
-    height: 300px;
-    bottom: 0;
-}
-
 .footer-text {
     font-weight: 500;
     font-size: 24px;
@@ -258,17 +232,17 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    
+    text-align: center;
 }
-
 .connect-text {
     font-family: Futura,Trebuchet MS,Arial,sans-serif;
     font-style: italic;
     font-weight: 500;
     font-size: 64px;
     line-height: 85px;
+    text-align: center;
+    color: #FFFFFF;
 }
-
 .input-text {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     font-style: normal;
@@ -297,7 +271,6 @@ footer {
 .disabled {
     opacity: 0.6;
 }
-
 #footerlink a:link,
 #footer-link a:visited {
     font-weight: 500;
@@ -315,8 +288,12 @@ footer {
     text-decoration: underline;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1050px) {
     .footer-text {
         align-items: center;
+    }
+}
+@media (max-width: 600px) {
+    .footer-container {
     }
 }
