@@ -148,7 +148,7 @@ body {
 
 @media screen and (max-width: 800px) {
 
-    h1 {
+    /* h1 {
         font-size: 24px;
     }
     .title {
@@ -162,16 +162,16 @@ body {
     .subtitle {
         font-size: 16px;
     }
-    
     .desc {
         font-size: 12px;
     }
+    */
 
     .menu {
         display: none;
     }
     .panel {
-        width: 25%;
+        width: 30%;
         margin: auto;
         margin-top: 15px;
         background-color: #101010;
@@ -179,6 +179,10 @@ body {
         align-content: center;
         border-radius: 12px;
         padding: 5px 10px;
+    }
+    
+    .panel-body {
+        padding: 5px;
     }
 
     div.content { margin-left: 0; margin-right: 0; position: relative;}
@@ -192,31 +196,34 @@ body {
 
 /* Footer */
 
-footer {
-    text-align: center;
-    padding: 3px;
-    background-color: #EC3599;
-    color: white;
-    margin-top: 0;
-}
-
-.connect-text {
-    width: 230px;
-    height: 200px;
+/* Footer */
+.footer-text {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 16px;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    text-align: center;
 }
-
+.connect-text {
+    font-family: Futura,Trebuchet MS,Arial,sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 85px;
+    text-align: center;
+    color: #FFFFFF;
+}
 .input-text {
-    font-family: SF Pro;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     font-style: normal;
 }
 .input-shadow {
     box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.14);
 }
 .button-submit {
-    background-color: #EC3599;
+    background-color: transparent;
     border-color: white;
     border-width: 2px;
     border-style: solid;
@@ -224,7 +231,7 @@ footer {
     padding: 5px 10px;
     margin: 5px;
     color: white;
-    font-family: Futura;
+    font-family: Futura,Trebuchet MS,Arial,sans-serif;
     float: left;
 }
 .button-submit:hover {
@@ -236,20 +243,35 @@ footer {
 .disabled {
     opacity: 0.6;
 }
-
 #footerlink a:link,
 #footer-link a:visited {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 16px;
     color: #FFFFFF;
     text-decoration: none;
 }
 #footer-link a:hover,
 #footer-link a:visited:hover {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 16px;
     color: #FFFFFF;
     text-decoration: underline;
 }
 
-@media (max-width: 800px) {
-    .connect-text {
+@media (max-width: 1050px) {
+    .footer-text {
         align-items: center;
+    }
+    .connect-text {
+        padding: 0;
+    }
+}
+@media (max-width: 600px) {
+
+    .connect-text {
+        padding: 0;
+        word-spacing: 0em;
     }
 }

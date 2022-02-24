@@ -225,46 +225,46 @@
 
 <footer>
   <!-- Links -->
-  <div class="container-fluid">
+  <div class="container-fluid" style="background-color: #EC3599;">
     <div class="row align-items-center">
       <div class="col-l-3 col-md-5 d-flex justify-content-center" id="footer-link">
-        <div class="flex-container connect-text">
-          <div><h2 style="text-align: start;">Let's Connect!</h2></div>
-          <div style="text-align: start;">
+        <div class="flex-container footer-text" id="">
+          <div class="connect-text">Let's Connect!</div>
+          <div style="margin-top: 10px; margin-bottom: 10px; align-items: center;">
             <a href="cv/cv.html">CV</a>
             <a href="blog.html" style="margin-left: 5px;">Blog</a>
             <a href="media/Resume.pdf" style="margin-left: 5px;">Resume</a>
           </div>
-          <div style="text-align: start;">
+          <div style="margin-top: 10px; align-items: center;">
             <a class="link" href="https://github.com/elainekodama" style="text-decoration: none;">
-              <i class="bi-github" role="img" aria-label="GitHub" style="font-size: 2em; padding: 5px;"></i>
+              <i class="bi-github" role="img" aria-label="GitHub" style="font-size: 1em; padding: 5px;"></i>
             </a>
             <a class="link" href="https://www.linkedin.com/in/elaine-kodama/" style="text-decoration: none;">
-              <i class="bi bi-linkedin" style="font-size: 2em; padding: 5px;"></i>
+              <i class="bi bi-linkedin" style="font-size: 1em; padding: 5px;"></i>
             </a>
           </div>
         </div>
       </div>
 
       <!-- Leave a message -->
-      <div class="col-l-9 col-md-7" style="margin-top: 2%; margin-bottom: 2%;">
-        <div class="row justify-content-center align-items-center flex">
-          <div class="col">
-            <div class="form-group" style="padding: 5px;">
-              <input type="name" class="form-control input-text input-shadow" id="nameInput" placeholder="Name">
+      <div class="col-l-9 col-md-7" style="margin-top: 3%; margin-bottom: 2%;">
+        <form id="javascript_form">
+          <div class="row justify-content-center align-items-center flex">
+            <div class="col">
+              <div class="form-group" style="padding: 5px;">
+                <input type="name" class="form-control input-text input-shadow" id="nameInput" placeholder="Name">
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group" style="padding: 5px;">
+                <input type="text" name="subject" class="form-control input-text input-shadow" id="emailInput" placeholder="Email">
+              </div>
             </div>
           </div>
-          <div class="col">
-            <div class="form-group" style="padding: 5px;">
-              <input type="email" class="form-control input-text input-shadow" id="emailInput" placeholder="Email">
-            </div>
-          </div>
-        </div>
-        <form>
           <div class="form-group" style="padding: 5px;">
-            <textarea type="message" class="form-control input-text input-shadow" id="messageInput" placeholder="NOT IMPLEMENTED YET" rows="3"></textarea>
+            <textarea type="message" name="text" class="form-control input-text input-shadow" id="messageInput" placeholder="NOT IMPLEMENTED YET" rows="3"></textarea>
           </div>
-          <button type="submit" class="button-submit">Submit</button>
+          <button type="submit" class="button-submit" id="js_send" value="Send">Submit</button>
         </form>
       </div>
     </div>

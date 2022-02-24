@@ -21,8 +21,7 @@ a:visited:hover {
 
 /* Header */
 
-.jumbotron {
-    height: auto;
+.hero {
     height: 730px;
     background: #101010;
     align-items: center;
@@ -30,8 +29,8 @@ a:visited:hover {
 }
 #headshot-img {
     object-fit: cover;    
-    width: 337px;
-    height: 480px;
+    max-width: 337px;
+    max-height: 480px;
     left: 309px;
     top: 145px;
     border-radius: 12px 0px 0px 12px;
@@ -45,7 +44,7 @@ a:visited:hover {
     font-weight: bold;
     font-size: 86px;
     line-height: 90%;
-    color: #EC3599;
+    color: #333333;
 }
 
 #software-developer {
@@ -113,7 +112,7 @@ a:visited:hover {
     margin: 0 auto;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 875px) {
     .flex-container {
         flex-direction: column;
         align-items: center;
@@ -130,7 +129,7 @@ a:visited:hover {
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
     }
-    .jumbotron {
+    .hero {
         height: 700px;
     }
 
@@ -160,7 +159,7 @@ a:visited:hover {
 
 .proj {
     position: relative;
-    width: 424px;
+    max-width: 424px;
     height: 516px;
     background: #FFFFFF;
     margin: 20px auto;
@@ -221,10 +220,7 @@ a:visited:hover {
 /* Skills */
 
 
-
-
 /* Footer */
-
 .footer-text {
     font-weight: 500;
     font-size: 24px;
@@ -292,8 +288,14 @@ a:visited:hover {
     .footer-text {
         align-items: center;
     }
+    .connect-text {
+        padding: 0;
+    }
 }
 @media (max-width: 600px) {
-    .footer-container {
+
+    .connect-text {
+        padding: 0;
+        word-spacing: 0em;
     }
 }
