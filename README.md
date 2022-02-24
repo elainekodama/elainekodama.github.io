@@ -1,4 +1,4 @@
-I created this website using HTML, CSS, and JavaScript with some help on the UI design (Lydia Hong)
+I created this website using HTML and CSS with some help on the UI design (Lydia Hong)
 
 Clicking on projects will take you to their individual GitHub repository
 
