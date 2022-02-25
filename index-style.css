@@ -19,6 +19,10 @@ a:visited:hover {
     text-decoration: none;
 }
 
+.navbar > .collapse {
+    margin-left: 20px;
+}
+
 /* Header */
 
 .hero {
@@ -102,10 +106,6 @@ a:visited:hover {
 .name-card-text {
     height: 400px;
     width: 800px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
     flex-direction: column;
     align-items: flex-start;
     padding: 20px;
@@ -116,8 +116,8 @@ a:visited:hover {
     .flex-container {
         flex-direction: column;
         align-items: center;
-        height: 750px;
-        width: 300px;
+        /* height: 750px;
+        width: 300px; */
     }
     .name-card {
         height: 600px;
@@ -152,6 +152,11 @@ a:visited:hover {
     #description {
         font-size: 16px;
         text-align: center;
+    }
+
+    .name-card-text {
+        height: 750px;
+        width: 300px;
     }
 }
 
@@ -218,7 +223,37 @@ a:visited:hover {
 }
 
 /* Skills */
+.progress
+.progress-bar {
+    background-color: #EC3599;
+    text-align: start;
+    padding: 5px;
+}
 
+/* About */
+#about-box {
+    max-width: 848px;
+    margin: 0;
+    position: relative;
+    padding: 0;
+    color:#FFFFFF;
+    margin-top: 20px;
+}
+
+.p
+.about-text{
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #101010;
+    font-size: 30px;
+    font-weight: normal;
+    color:#FFFFFF;
+}
+
+@media (max-width: 992px) {
+    #about-box{
+        max-width:424px;
+    }
+}
 
 /* Footer */
 .footer-text {

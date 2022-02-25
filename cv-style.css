@@ -21,7 +21,7 @@
 
 h1 {
     margin: auto;
-    font-family: Futura;
+    font-family: Futura,Trebuchet MS,Arial,sans-serif;
     text-decoration: none;
     font-size: 32px;
     padding-bottom: 20px;
@@ -29,7 +29,7 @@ h1 {
 }
 .title {
     padding-top: 10px;
-    font: SF Pro;
+    font: -apple-system, BlinkMacSystemFont, sans-serif;
     font-weight: 700;
     color: #EC3599;
     font-size: 24px;
@@ -38,28 +38,26 @@ h1 {
 }
 
 .title2 {
-    font: SF Pro;
+    font: -apple-system, BlinkMacSystemFont, sans-serif;
     color: #EC3599;
     font-size: 18px;
     font-weight: normal;
 }
 
 .subtitle {
-    font-family: SF Pro;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     color: #BDBDBD;
     font-size: 22px;
     font-weight: normal;
 }
 
 .desc {
-    font-family: SF Pro;
-    color: #FFFFFF;
-    font-size: 16px;
-    font-weight: normal;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+
 }
 
 h3 {
-    font-family: Futura;
+    font-family: Futura,Trebuchet MS,Arial,sans-serif;
     color: #EC3599;
 }
 
@@ -75,7 +73,7 @@ h3 {
 
 a:link,
 a:visited {
-    font-family: Futura;
+    font-family: Futura,Trebuchet MS,Arial,sans-serif;
     font-style: normal;
     font-weight: 500;
     color: #FFFFFF;
@@ -84,22 +82,26 @@ a:visited {
 
 a:link:hover,
 a:visited:hover {
-    font-family: Futura;
+    font-family: Futura,Trebuchet MS,Arial,sans-serif;
     font-style: normal;
     font-weight: 500;
     color: #EC3599;
     text-decoration: none;
 }
 
+.navbar > .collapse {
+    margin-left: 20px;
+}
+
 /* Sidebar */
 body {
     margin: 0;
-    font-family: SF Pro;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     background: #272727;
 }
 
 .menu {
-    font-family: SF Pro;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     padding-top: 40px;
     color: white;
     float: left;
@@ -139,7 +141,7 @@ body {
 
 .content {
     float: left;
-    font-family: SF Pro;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     color: #FFFFFF;
     font-size: 18px;
     font-weight: normal;
@@ -193,8 +195,6 @@ body {
         display: none;
     }
 }
-
-/* Footer */
 
 /* Footer */
 .footer-text {
