@@ -136,6 +136,7 @@ a:visited:hover {
     #headshot-img {
         height: 380px;
         width: 300px;
+        top: 50%;
     }
 
     #name {
