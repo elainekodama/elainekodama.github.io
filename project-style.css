@@ -39,7 +39,7 @@ a:visited:hover {
     text-decoration: none;
     font-style: normal;
     font-weight: bold;
-    font-size: 70px;
+    font-size: 50px;
     color:#FFFFFF;
     justify-content: center;
     align-items:center;
@@ -58,9 +58,8 @@ a:visited:hover {
 }
 
 .words {
-    font-family: Futura,Trebuchet MS,Arial,sans-serif;
+    font: -apple-system, BlinkMacSystemFont, sans-serif;
     font-style: normal;
-    font-weight: bold;
     font-size: 18px;
     line-height: 32px;
     padding: 20px;
