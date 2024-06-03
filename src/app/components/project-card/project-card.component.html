@@ -1,0 +1,12 @@
+<div class="proj-card" [class.proj-card-horizontal]="flip" [@fade]>
+    <img [src]="imageSource" class="proj-img" [class.proj-img-horizontal]="flip" />
+    <div style="padding: 12px">
+        <h2 class="proj-title">
+            {{title}}
+        </h2>
+        <p class="proj-lang">{{techStack}}</p>
+        <p class="proj-desc">
+            {{description}}
+        </p>
+    </div>
+</div>

@@ -1,0 +1,114 @@
+<div class="main-color" style="width: 100%; padding: 0; margin: 0;">
+    <app-hero></app-hero>
+    <div style="width: 100%; display: flex; justify-content: center; padding: 0px">
+        <div style="width: 66%;">
+            <div class="section">
+                <h1 style="color: white">OCTO Flashcards</h1>
+                <div
+                    style="background-color: white; border-radius: 12px; display: flex; flex-direction: row; overflow: hidden;">
+                    <img src="assets/octo-cards.png" class="proj-img" style="background-color: #29A39B; padding: 12px;">
+                    <div
+                        style="padding: 12px; display: flex; flex-direction: column; align-items: center; justify-content: space-around;">
+                        <h2 style="color: black">{{octoHeadline}}</h2>
+                        <h3 class="normal-font">{{octoDescription}}</h3>
+                        <div class="octo-link"
+                            style="flex-direction: row; display: flex; justify-content: space-evenly; width: 100%">
+                            <a href="https://apps.apple.com/us/app/octo-flashcards/id1664003220" class="web-link"
+                                style="display: block;">
+                                <h3>Story</h3>
+                            </a>
+                            <a href="https://octoflashcards.com/" class="web-link" style="display: block;">
+                                <h3>Website</h3>
+                            </a>
+                            <a href="https://apps.apple.com/us/app/octo-flashcards/id1664003220" class="web-link"
+                                style="display: block;">
+                                <h3>App Store</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h1>Knowledge Base</h1>
+                <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                    <app-project-card style="width: 30%;" title="Application Architecture"
+                        imageSource="assets/accessc.png" tech="Front-end, Rest API, Cloud"
+                        description="An interactive map that allows users to view accessible features on USC's campus">
+                    </app-project-card>
+                    <app-project-card style="width: 30%" title="Microservices" imageSource="assets/scrabble.jpg"
+                        tech="ASP.NET core"
+                        description="A simplified version of the classic game Scrabble that can be played between two users">
+                    </app-project-card>
+                    <app-project-card style="width: 30%" title="State Management" imageSource="assets/evite.png"
+                        tech="React Native"
+                        description="CLI program where users can invite users to parties through email and manage them through a login system">
+                    </app-project-card>
+                </div>
+                <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                    <app-project-card style="width: 30%;" title="Repository Structure" imageSource="assets/accessc.png"
+                        tech="ASP.NET, database"
+                        description="An interactive map that allows users to view accessible features on USC's campus">
+                    </app-project-card>
+                    <app-project-card style="width: 30%" title="API Auth" imageSource="assets/scrabble.jpg"
+                        tech="ASP.NET core"
+                        description="A simplified version of the classic game Scrabble that can be played between two users">
+                    </app-project-card>
+                    <app-project-card style="width: 30%" title="BLE" imageSource="assets/evite.png" tech="React Native"
+                        description="CLI program where users can invite users to parties through email and manage them through a login system">
+                    </app-project-card>
+                </div>
+            </div>
+            <div class="section">
+                <h1>Skills</h1>
+                <h3>Languages:</h3>
+                <div class="skillsGroup">
+                    <h4 class="skill" *ngFor="let lang of languages; let first = first; let last = last"
+                        [ngClass]="{firstItem: first, lastItem: last}">{{lang}}</h4>
+                </div>
+                <h3>Frameworks:</h3>
+                <div class="skillsGroup">
+                    <h4 class="skill" *ngFor="let framework of frameworks; let first = first; let last = last"
+                        [ngClass]="{firstItem: first, lastItem: last}">
+                        {{framework}}</h4>
+                </div>
+                <h3>Cloud Computing:</h3>
+                <div class="skillsGroup">
+                    <h4 class="skill" *ngFor="let tool of tools; let first = first; let last = last"
+                        [ngClass]="{firstItem: first, lastItem: last}">{{tool}}</h4>
+                </div>
+            </div>
+            <div class="section">
+                <h1>
+                    About
+                </h1>
+                <p class="text">
+                    Hello, I am a software developer that is driven by a passion for technology and creativity.
+                    My non-traditional career path has provided me with industry-relevant knowledge and a unique
+                    perspective.
+                    I have served as a full-stack developer, with a keen eye for UI/UX, prioritizing a consumer-first
+                    mindset in every project.
+                    Along with satisfying the end-user, I also strive to maintain team efficiency by writing clean,
+                    reusable
+                    code and following best practices.
+                </p>
+                <p class="text">
+                    My success is rooted in my versatility as a programmer, effective communication, timely
+                    delivery,
+                    and meticulous attention to detail.
+                    I have successfully participated in multiple full lifecycle projects, including planning,
+                    development, testing, and software release.
+                    Beyond software development, I have drafted requirements, conducted risk analysis, and created
+                    architecture documents.
+                    My proven time management skills allow me to balance multiple projects simultaneously, consistently
+                    meeting deadlines and delivering high-quality results.
+                </p>
+                <p class="text">
+                    Thank you for taking the time to view my site and learn more about me.
+                    I look forward to bringing my skills and passion to new and exciting challenges.
+                </p>
+                <div style="height: 24px"></div>
+            </div>
+
+        </div>
+    </div>
+</div>

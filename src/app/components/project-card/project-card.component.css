@@ -1,0 +1,66 @@
+.proj-card {
+    background-color: white;
+    color: black;
+    border-radius: 12px;
+    margin: 24px 0px;
+    overflow: hidden;
+}
+
+.proj-title {
+    color: #EC1F64;
+}
+
+.proj-card:hover,
+.proj-card:visited:hover {
+    cursor: pointer;
+    background-color: #EC1F64;
+    color: white;
+    transition: background 0.3s;
+
+    .proj-title {
+        color: white;
+        transition: background 0.3s;
+    }
+}
+
+.proj-card-horizontal {
+    display: flex;
+    flex-direction: row;
+}
+
+.proj-img-horizontal {
+    border-radius: 12px 0 0 12px;
+}
+
+.proj-lang {
+    font-family: Futura, Trebuchet MS, Arial, sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #828282;
+    transition: background 0.3s;
+}
+
+.proj-desc {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-style: normal;
+    font-weight: 510;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333333;
+    transition: background 0.3s;
+}
+
+.proj-card:hover .proj-name {
+    color: #FFFFFF;
+}
+
+.proj-card:hover .proj-desc {
+    color: #FFFFFF;
+}
+
+.proj-card:hover .proj-lang {
+    color: #FFA5C3;
+    ;
+}

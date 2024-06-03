@@ -1,0 +1,50 @@
+a.web-link {
+    display: inline-block;
+}
+
+a.web-link:visited {
+    color: black
+}
+
+a.web-link {
+    color: black
+}
+
+.normal-font {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-style: normal;
+    font-weight: 510;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333333;
+}
+
+.octo-link {
+    display: block;
+}
+
+.section {
+    margin: 84px 0px;
+    color: white;
+}
+
+.skillsGroup {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.skill {
+    background-color: #EC1F6490;
+    margin: 8px;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.firstItem {
+    margin-left: 0px;
+}
+
+.lastItem {
+    margin-right: 0px;
+}

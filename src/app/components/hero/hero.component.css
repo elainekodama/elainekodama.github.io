@@ -1,0 +1,62 @@
+#name {
+    font-family: Futura, Trebuchet MS, Arial, sans-serif;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 86px;
+    line-height: 84px;
+    margin-bottom: 24px;
+    color: #EC1F64;
+}
+
+#software-developer {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 276;
+    color: #828282;
+    padding-bottom: 10px;
+}
+
+#description {
+    font-family: SF Pro;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    color: #333333;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.name-card-text {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 24px;
+    margin: 0 auto;
+}
+
+.row-to-column {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 600px) {
+    .row-to-column {
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+    }
+
+    .name-card-text {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #name {}
+}

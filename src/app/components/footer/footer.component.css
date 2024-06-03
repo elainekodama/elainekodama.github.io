@@ -1,0 +1,18 @@
+#footer {
+    width: 100%;
+    display: flex;
+    padding: 48px 0px;
+    justify-content: space-around;
+}
+
+.icon {
+    background-color: white;
+    color: black;
+    margin: 0px 8px;
+}
+
+.logo-icon {
+    color: "blue";
+    background-color: blue;
+    mask-image: initial
+}

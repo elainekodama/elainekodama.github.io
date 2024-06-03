@@ -1,0 +1,49 @@
+.sidenav {
+    flex-direction: column;
+    display: inline;
+    flex: 1;
+    position: -webkit-sticky;
+    /* For Safari */
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+.sidenavContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    align-items: start;
+    padding-right: 48px;
+}
+
+.sidenavButton {
+    margin: 12px;
+}
+
+.mainContent {
+    color: white;
+}
+
+.sidePadding {
+    padding: 0px 48px;
+}
+
+.expHeader {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    color: #EC3599
+}
+
+.noMargin {
+    margin: 0
+}
+
+.expLocation {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 276;
+    color: #828282;
+}

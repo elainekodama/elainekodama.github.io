@@ -1,0 +1,79 @@
+<div style="display: flex; flex-direction: row; flex: 1">
+    <div class="sidenav accent-color">
+        <div class="sidenavContainer">
+            <button class="main-button sidenavButton">
+                Education
+            </button>
+            <button class="main-button sidenavButton">
+                Experience
+            </button>
+            <button class="main-button sidenavButton">
+                Skills
+            </button>
+            <button class="main-button sidenavButton">
+                Interests
+            </button>
+        </div>
+    </div>
+
+    <!-- MAIN PAGE -->
+    <div class="mainContent sidePadding">
+        <!-- EDUCATION -->
+        <h1>Education</h1>
+        <div *ngFor="let school of education">
+            <div class="expHeader">
+                <h2 class="noMargin">{{school.name}}</h2>
+            </div>
+            <h3 class="noMargin expLocation">{{school.time}}</h3>
+            <p *ngIf="school.major != null" class="text noMargin">Major: {{school.major}}</p>
+            <p class="text noMargin">GPA: {{school.gpa}}</p>
+            <p class="text noMargin">Honors/Awards: {{school.awards}}</p>
+            <div style="height: 24px"></div>
+        </div>
+
+        <!-- EXPERIENCE -->
+        <h1 id="experience">Experience</h1>
+        <div *ngFor="let exp of experiences">
+            <div class="expHeader">
+                <h2 class="noMargin">{{exp.title}}</h2>
+                &nbsp;
+                <p class="noMargin text">{{exp.company}}</p>
+            </div>
+            <h3 class="noMargin expLocation">{{exp.location}}</h3>
+            <ul class="noMargin" *ngFor="let bullet of exp.points">
+                <li class="text noMargin">{{bullet}}</li>
+            </ul>
+            <div style="height: 24px"></div>
+        </div>
+
+        <!-- SKILLS -->
+        <h1>Skills</h1>
+        <div *ngFor="let skill of skills">
+            <div class="expHeader">
+                <h2 class="noMargin">{{skill.title}}</h2>
+            </div>
+            <ul class="noMargin" *ngFor="let bullet of skill.items">
+                <li class="text noMargin">{{bullet}}</li>
+            </ul>
+            <div style="height: 24px"></div>
+        </div>
+
+        <!-- PROJECTS -->
+        <h1>Projects</h1>
+        <div *ngFor="let skill of skills">
+            <div class="expHeader">
+                <h2 class="noMargin">{{skill.title}}</h2>
+            </div>
+            <ul class="noMargin" *ngFor="let bullet of skill.items">
+                <li class="text noMargin">{{bullet}}</li>
+            </ul>
+            <div style="height: 24px"></div>
+        </div>
+
+
+        <!-- INTERESTS -->
+        <h1>
+            Interests
+        </h1>
+    </div>
+</div>

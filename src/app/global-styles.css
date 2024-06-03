@@ -1,0 +1,77 @@
+.main-color {
+    background-color: #272727;
+
+}
+
+.accent-color {
+    background-color: #101010;
+}
+
+.highlight-color {
+    background-color: #EC1F64;
+}
+
+.main-button {
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-family: Futura, Trebuchet MS, Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.main-button:hover,
+a:visited:hover,
+a.web-link:hover {
+    color: #EC1F64;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: Futura, Trebuchet MS, Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+.text {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 32px;
+}
+
+.proj-img {
+    object-fit: cover;
+    width: 100%
+}
+
+.global-padding {
+    padding: 12px;
+}
+
+.row-class {
+    display: flex;
+    flex-direction: row;
+}
+
+.column-lay {
+    background-color: #ff969679;
+    height: 100%;
+    width: 100%;
+    margin: 0px px
+}
